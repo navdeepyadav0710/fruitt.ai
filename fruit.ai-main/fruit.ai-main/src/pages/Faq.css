@@ -1,0 +1,124 @@
+
+:root {
+    --primary-color: #007bff; 
+    --primary-dark: #0056b3; 
+    --danger-color: #dc3545; 
+    --danger-dark: #c82333;
+    --background-color: #f9f9f9; 
+    --card-background: #ffffff; 
+    --text-color: #333333; 
+    --answer-text-color: #555555;
+    --border-color: #dddddd; 
+    --container-bg: #ffffff; 
+    --container-border: #007bff; 
+    --page-bg: #e9ecef; 
+  }
+  
+  
+  body {
+    background-color: var(--page-bg); 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+  }
+  
+ 
+  .container {
+    margin: 20px auto;
+    max-width: 600px; 
+    padding: 20px;
+    background-color: var(--container-bg); 
+    border: 2px solid var(--container-border);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+ 
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+  }
+  
+  textarea.form-control {
+    height: 100px;
+    resize: vertical;
+  }
+  
+
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: var(--danger-dark);
+  }
+  
+
+  .list-group {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-group-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  .list-group-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .list-group-item p {
+    margin: 0;
+    color: var(--answer-text-color);
+  }
+  
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .btn {
+      font-size: 14px;
+    }
+  }
+  
